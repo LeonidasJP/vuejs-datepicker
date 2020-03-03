@@ -28,7 +28,7 @@ describe('DateInput', () => {
     expect(wrapper.vm.typedDate).toEqual(dateString)
     expect(wrapper.vm.formattedValue).toEqual(dateString)
   })
-  
+
   it('uses custom date parser', () => {
     wrapper.vm.parse = function (str) {
       const tokens = str.split('/')
